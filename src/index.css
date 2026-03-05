@@ -183,3 +183,30 @@
 .animate-glow {
   animation: glow-pulse 2s ease-in-out infinite;
 }
+
+/* Short screens (<=675px height) — compact layout */
+@media (max-height: 675px) {
+  .short-screen-gaps {
+    gap: 1rem !important;
+  }
+  .short-screen-title {
+    font-size: 2rem !important;
+  }
+  .short-screen-box {
+    width: min(200px, 55vw) !important;
+    height: min(200px, 55vw) !important;
+  }
+  .short-screen-box-icon {
+    width: 56px !important;
+    height: 56px !important;
+  }
+  .short-screen-question {
+    font-size: 3rem !important;
+  }
+  .short-screen-cta {
+    gap: 0.5rem !important;
+  }
+  .short-screen-desc {
+    font-size: 0.8rem !important;
+  }
+}

@@ -37,7 +37,7 @@ function App() {
       </header>
 
       <main className="flex-1 flex items-center justify-center px-4 relative z-10 overflow-hidden">
-        <div className="w-full max-w-2xl mx-auto text-center space-y-8 sm:space-y-12">
+        <div className="w-full max-w-2xl mx-auto text-center space-y-8 sm:space-y-12 short-screen-gaps">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -53,11 +53,11 @@ function App() {
                 ]
               }}
               transition={{ duration: 3, repeat: Infinity }}
-              className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight"
+              className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight short-screen-title"
             >
               <span className="text-primary">ONE</span> <span className="text-foreground">box</span>
             </motion.div>
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-md mx-auto px-4">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-md mx-auto px-4 short-screen-desc">
               Something mysterious is coming soon
             </p>
           </motion.div>
@@ -70,8 +70,8 @@ function App() {
             style={{ perspective: '1000px' }}
           >
             <motion.div
-              className="relative mx-auto"
-              style={{ 
+              className="relative mx-auto short-screen-box"
+              style={{
                 width: 'min(280px, 70vw)',
                 height: 'min(280px, 70vw)',
               }}
@@ -108,7 +108,7 @@ function App() {
                       ease: 'easeInOut',
                     }}
                   >
-                    <Package size={80} weight="duotone" className="text-primary/80" />
+                    <Package size={80} weight="duotone" className="text-primary/80 short-screen-box-icon" />
                   </motion.div>
                 </div>
 
@@ -139,7 +139,7 @@ function App() {
                 </div>
 
                 <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-card/80 to-transparent rounded-b-3xl flex items-end justify-center pb-6">
-                  <span className="text-6xl sm:text-7xl md:text-8xl font-bold text-primary/20">?</span>
+                  <span className="text-6xl sm:text-7xl md:text-8xl font-bold text-primary/20 short-screen-question">?</span>
                 </div>
               </div>
 
@@ -162,7 +162,7 @@ function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="space-y-4"
+            className="space-y-4 short-screen-cta"
           >
             <Button
               size="lg"
