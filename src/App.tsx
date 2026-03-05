@@ -2,11 +2,11 @@ import { motion } from 'framer-motion'
 import { Package, Sparkle } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { PoweredByExplNodes } from '@/components/PoweredByExplNodes'
+import { Footer } from '@/components/Footer'
+import { EcosystemDropdown } from '@/components/EcosystemDropdown'
 import logo from '@/assets/images/logo.png'
 
 function App() {
-  const currentYear = new Date().getFullYear()
-
   return (
     <div className="h-screen w-screen flex flex-col bg-background overflow-hidden relative">
       <div className="absolute inset-0 opacity-30">
@@ -32,6 +32,7 @@ function App() {
               <PoweredByExplNodes size="sm" />
             </div>
           </div>
+          <EcosystemDropdown />
         </div>
       </header>
 
@@ -178,13 +179,7 @@ function App() {
         </div>
       </main>
 
-      <footer className="border-t border-border/30 backdrop-blur-sm bg-background/50 z-10 flex-shrink-0">
-        <div className="container mx-auto px-4 sm:px-6 py-3">
-          <p className="text-xs sm:text-sm text-muted-foreground text-center">
-            © {currentYear} ONE ecosystem. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
