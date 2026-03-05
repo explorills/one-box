@@ -1,0 +1,251 @@
+# ONE Box - Full Documentation
+
+> Mystery Experience Platform. Part of the ONE ecosystem.
+
+## Table of Contents
+
+1. Overview
+2. Core Philosophy
+3. EXPL Nodes
+4. Features & Functionality
+5. Revenue Model
+6. Ecosystem Products
+7. Technical Architecture
+8. Frequently Asked Questions
+9. Links & Community
+10. Contact
+
+---
+
+## 1. Overview
+
+ONE Box is a mystery experience platform within the ONE ecosystem. Something mysterious is coming soon to the ecosystem. The platform represents an upcoming addition to the interconnected suite of ONE products, each serving a unique purpose within the decentralized infrastructure.
+
+Stay tuned for the mystery reveal. ONE Box will join the growing family of open-source, community-driven applications powered by EXPL Nodes.
+
+---
+
+## 2. Core Philosophy
+
+### Open Source
+Every line of code is publicly available on GitHub. We believe in transparency, community contribution, and collaborative development. Anyone can review, fork, and contribute to the platform.
+
+### Community-Driven
+Built by people who love what they create. Every feature, every decision, every improvement comes from listening to our community. We're not building for users; we're building WITH users.
+
+### Fair Revenue Model
+Unlike traditional Web3 projects where founders take the majority:
+- **45% to EXPL Node Owners**: Distributed proportionally to all Node holders
+- **45% to ONE Creators**: Rewarding contributors, builders, and participants
+- **10% to Founders**: Team operational and development costs
+
+This ensures the community always benefits first.
+
+---
+
+## 3. EXPL Nodes
+
+### What are EXPL Nodes?
+
+EXPL Nodes are the foundational ownership units of the entire ONE ecosystem. Owning a Node is like owning shares in a company, but better — you earn daily tokens AND receive revenue share from ALL ecosystem products.
+
+### Node Benefits
+
+Each EXPL Node provides:
+- **Shareholder Status**: Across ALL ecosystem projects (Pump, Network, World, Box, etc.)
+- **Daily Token Emissions**: 171 EXPL tokens per day for 731 days = 125,000 EXPL total
+- **Revenue Share**: 45% of ALL ecosystem revenue distributed to Node owners proportionally
+- **Governance Rights**: Vote on ecosystem decisions and future direction
+- **Exclusive Access**: Early access to new products and features
+
+### Supply & Distribution
+
+- **Total Supply**: 1 million Nodes
+- **Batch 1**: 12,000 Nodes (already distributed)
+- **Batch 2**: 88,000 Nodes
+- **Batch 3**: 900,000 Nodes
+
+Scarcity ensures value. As the ecosystem grows, Node ownership becomes increasingly valuable.
+
+---
+
+## 4. Features & Functionality
+
+### Coming Soon
+
+ONE Box features will be revealed when the mystery is unveiled. Stay tuned for announcements on our official channels.
+
+---
+
+## 5. Revenue Model
+
+### How Revenue is Generated
+
+- Platform transaction fees
+- Premium features (future)
+- Marketplace commissions
+- Ecosystem service fees
+
+### How Revenue is Distributed
+
+Every dollar of revenue follows this split:
+- **45% to EXPL Node Owners**: Distributed proportionally based on Node holdings
+- **45% to ONE Creators**: Community contributors, builders, participants
+- **10% to Founders**: Operational costs, development, team salaries
+
+This model ensures:
+- Community benefits FIRST
+- Sustainable development
+- Long-term alignment
+- Fair value distribution
+
+---
+
+## 6. Ecosystem Products
+
+### Active Products
+
+| Product | Domain | Description |
+|---------|--------|-------------|
+| **ONE Pump** | pump.expl.one | Crypto sentiment tracking |
+| **ONE Network** | network.expl.one | Decentralized node management platform |
+| **ONE World** | world.expl.one | Metaverse game lobby and multiplayer interface |
+| **EXPL Nodes** | node.expl.one | Node purchase and management portal |
+| **ONE Docs** | docs.expl.one | Complete ecosystem documentation |
+
+### Coming Soon
+
+| Product | Domain | Description |
+|---------|--------|-------------|
+| **ONE Box** | box.expl.one | Mystery experience platform (this product) |
+| **ONE ID** | id.expl.one | Decentralized digital identity |
+| **ONE Agent** | agent.expl.one | AI-powered blockchain agents |
+| **ONE Chat** | chat.expl.one | Encrypted messaging platform |
+| **ONE Venture** | venture.expl.one | Community investment platform |
+| **ONE Care** | care.expl.one | Charitable giving platform |
+| **ONE Merch** | merch.expl.one | Ecosystem merchandise store |
+| **ONE Space** | space.expl.one | Extended metaverse experiences |
+
+### Ecosystem Strategy
+
+Each product operates independently but benefits the entire ecosystem:
+- Revenue from ALL products distributed to Node owners
+- Cross-platform user accounts via ONE ID
+- Unified EXPL token across all platforms
+- Shared community governance
+
+---
+
+## 7. Technical Architecture
+
+### Frontend Stack
+
+- **Framework**: React 19 with TypeScript for type safety
+- **Runtime**: Bun for blazing-fast package management and execution
+- **Build Tool**: Vite for lightning-fast development and builds
+- **Styling**: Tailwind CSS with JIT compilation
+- **Icons**: Phosphor Icons for consistent iconography
+- **Animations**: Framer Motion for smooth interactions
+
+### Build & Deployment
+
+- **SSG Pre-rendering**: Puppeteer-based static site generation
+  - Crawlers see full rendered HTML
+  - Instant content visibility for search engines and AI systems
+  - Faster initial page load for users
+- **Deployment**: AWS S3 + CloudFront with automatic CI/CD
+- **CDN**: CloudFront global distribution
+- **Domain**: box.expl.one
+
+### SEO & AI Visibility
+
+- **Meta Tags**: Complete Open Graph and Twitter Card implementation
+- **Structured Data**: Organization, WebSite, WebApplication, BreadcrumbList schemas
+- **LLMs.txt**: AI-readable documentation standard
+- **AI Crawlers**: 15+ AI systems allowed (ChatGPT, Claude, Perplexity, etc.)
+- **Sitemap**: XML sitemap for search engine indexing
+
+---
+
+## 8. Frequently Asked Questions
+
+### What is ONE Box?
+
+ONE Box is a mystery experience platform within the ONE ecosystem. The full details will be revealed soon.
+
+### When will ONE Box launch?
+
+Stay tuned for announcements on our official channels. Follow us on Twitter/X and join our Discord for the latest updates.
+
+### What are EXPL Nodes?
+
+EXPL Nodes are ownership units in the ONE ecosystem. Each Node:
+- Earns 171 EXPL tokens daily for 731 days
+- Receives 45% of ALL ecosystem revenue
+- Grants governance rights
+- Provides shareholder status across all products
+
+Learn more: https://node.expl.one
+
+### Is ONE Box open source?
+
+Yes! Every line of code is public on GitHub: https://github.com/explorills
+
+We believe in transparency and community contribution.
+
+### How does the revenue model work?
+
+All ecosystem revenue is split:
+- 45% to Node owners (distributed proportionally)
+- 45% to Creators (community contributors)
+- 10% to Founders (operations and development)
+
+---
+
+## 9. Links & Community
+
+### Official Links
+
+- **Main Website**: https://expl.one
+- **ONE Box**: https://box.expl.one
+- **Documentation**: https://docs.expl.one
+- **EXPL Nodes**: https://node.expl.one
+
+### Social Media
+
+- **GitHub**: https://github.com/explorills (source code, contributions)
+- **Twitter/X**: https://x.com/explorills_main (announcements, updates)
+- **Discord**: https://discord.com/invite/RetTCVq7tJ (community, support)
+
+### Developer Resources
+
+- **Repository**: https://github.com/explorills/one-box
+- **License**: MIT Open Source
+- **Contributing**: Pull requests welcome
+- **Issues**: Report bugs and request features on GitHub
+
+---
+
+## 10. Contact
+
+### Community Support
+
+Join our Discord for:
+- Technical support
+- Feature requests
+- Community discussions
+- Partnership inquiries
+- General questions
+
+**Discord**: https://discord.com/invite/RetTCVq7tJ
+
+### Business Inquiries
+
+For partnerships, press, or business matters, reach out via Discord and tag @team.
+
+---
+
+**Last Updated**: March 5, 2026
+**Version**: 1.0.0
+**Ecosystem**: ONE Ecosystem // Powered by EXPL Nodes
+**License**: MIT Open Source

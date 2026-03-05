@@ -7,6 +7,7 @@ const ECOSYSTEM_LINKS = [
   { name: 'network', url: 'https://network.expl.one' },
   { name: 'world', url: 'https://world.expl.one' },
   { name: 'id', url: 'https://id.expl.one' },
+  { name: 'box', url: 'https://box.expl.one' },
   { name: 'EXPL Nodes', url: 'https://node.expl.one' },
   { name: 'docs', url: 'https://docs.expl.one' },
 ]

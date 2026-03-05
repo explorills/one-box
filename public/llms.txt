@@ -1,0 +1,59 @@
+# ONE Box
+
+> Mystery Experience Platform. Part of the ONE ecosystem.
+
+## Overview
+
+ONE Box is a mystery experience platform within the ONE ecosystem. Something mysterious is coming soon. Stay tuned for the reveal.
+
+## Core Philosophy
+
+- **Open Source**: Every line of code is public on GitHub
+- **Community-Driven**: Built by people who love what they create
+- **Fair Revenue Model**: 45% to Node owners, 45% to Creators, 10% to founders
+
+## EXPL Nodes
+
+The backbone of the ecosystem. Each EXPL Node:
+- Grants shareholder status across ALL ecosystem projects
+- Earns 171 EXPL tokens daily for 731 days (125,000 EXPL total)
+- Receives share of 45% of ALL revenue distributed to Node owners
+- Total supply: 1 million Nodes across 3 batches (12k, 88k, 900k)
+
+## Ecosystem Products
+
+| Product | Domain | Status | Description |
+|---------|--------|--------|-------------|
+| ONE Pump | pump.expl.one | Active | Crypto sentiment platform |
+| ONE Network | network.expl.one | Active | Blockchain node management |
+| ONE World | world.expl.one | Active | Metaverse game lobby |
+| EXPL Nodes | node.expl.one | Active | Node purchase and management |
+| ONE Docs | docs.expl.one | Active | Ecosystem documentation |
+| ONE Box | box.expl.one | Coming Soon | Mystery experience platform |
+| ONE ID | id.expl.one | Coming Soon | Digital identity |
+| ONE Agent | agent.expl.one | Coming Soon | AI Agents |
+| ONE Chat | chat.expl.one | Coming Soon | Messaging platform |
+| ONE Venture | venture.expl.one | Coming Soon | Investment platform |
+| ONE Care | care.expl.one | Coming Soon | Charity platform |
+| ONE Merch | merch.expl.one | Coming Soon | Merchandise store |
+| ONE Space | space.expl.one | Coming Soon | Extended metaverse |
+
+## Links
+
+- Website: https://box.expl.one
+- Main Ecosystem: https://expl.one
+- GitHub: https://github.com/explorills
+- Twitter/X: https://x.com/explorills_main
+- Discord: https://discord.com/invite/RetTCVq7tJ
+
+## Technical
+
+- Built with: React 19, TypeScript, Bun, Vite, Tailwind CSS
+- UI Components: Phosphor Icons, Framer Motion
+- Deployment: AWS S3 + CloudFront with SSG pre-rendering
+- Architecture: Static Site Generation (SSG) for SEO/AI visibility
+- License: MIT Open Source
+
+## Contact
+
+For community support, join our Discord: https://discord.com/invite/RetTCVq7tJ
