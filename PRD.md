@@ -1,166 +1,133 @@
 # Planning Guide
 
-A gamified mystery box platform where users can select one of five mystery boxes every 7 days to win prizes, collect letters to unlock higher tiers, and track their winnings - all within a single, immersive, no-scroll viewport experience.
+A "Coming Soon" landing page for ONE box - a mystery box platform with a single, centered, animated 3D mystery box that creates anticipation for the upcoming launch.
 
 **Experience Qualities**:
-1. **Suspenseful** - Build anticipation through mysterious box designs, hover states, and dramatic reveal animations that make every selection feel consequential
-2. **Rewarding** - Celebrate wins with bold visual feedback, progress tracking, and tier advancement that makes users feel accomplished
-3. **Elegant** - Maintain a sophisticated dark aesthetic with fluid animations and premium finishes that elevate the gamified experience
+1. **Mysterious** - Dark, atmospheric design with glowing effects that builds curiosity about what's inside the box
+2. **Premium** - Sophisticated animations and lighting effects that communicate high value and exclusivity
+3. **Anticipatory** - Floating animations and pulsing glows that create a sense of something about to happen
 
-**Complexity Level**: Light Application (multiple features with basic state)
-This is a single-purpose gamified experience with user authentication state, cooldown timers, prize tracking, and role progression - but all contained within one view with modal interactions.
+**Complexity Level**: Micro Tool (single-purpose application)
+This is a pure coming soon page with a single animated mystery box, minimal UI, and social links - designed to build anticipation with zero scroll on any device.
 
 ## Essential Features
 
-**Mystery Box Selection**
-- Functionality: Display 5 identical mystery boxes that users can interact with to claim prizes
-- Purpose: Core mechanic that drives engagement and creates anticipation
-- Trigger: User clicks one of the 5 box elements
-- Progression: Hover reveals subtle glow → Click triggers box opening animation → Brief suspense moment → Prize reveal with celebration animation → Modal shows prize details and progress
-- Success criteria: Box opens smoothly, prize is revealed clearly, and user understands what they won
+**Animated Mystery Box**
+- Functionality: Display a single, large 3D mystery box with continuous floating and glow animations
+- Purpose: Create visual interest and build anticipation for the launch
+- Trigger: Page load
+- Progression: Page loads → Box fades in with scale animation → Continuous float and glow animations → Shimmer effect passes across periodically
+- Success criteria: Box feels premium, mysterious, and alive with smooth 60fps animations
 
-**User Authentication & Role Display**
-- Functionality: Show logged-in user's avatar, username, and current tier (explorills/RENDRILL/PROMDRILL)
-- Purpose: Personalize experience and display progression status
-- Trigger: User connects wallet/authenticates
-- Progression: User authenticates → Avatar and username appear in header → Current tier badge displays with appropriate color
-- Success criteria: User can see their identity and current tier at all times
+**Coming Soon Message**
+- Functionality: Display "Coming Soon" messaging with the ONE box branding
+- Purpose: Communicate launch status and build brand identity
+- Trigger: Page load
+- Progression: Fade in after box animation completes
+- Success criteria: Clear, elegant typography that reinforces mystery and premium feel
 
-**My Loot Inventory**
-- Functionality: Display all accumulated prizes, collected letters/word progress, claimed items, and current tier
-- Purpose: Track user progress and create collection completionism
-- Trigger: User clicks "My Loot" button
-- Progression: Click button → Modal slides in from right → Shows categorized assets with counts → Displays letter collection progress → Shows claimed items section → Current tier at bottom
-- Success criteria: All prizes are accurately counted and displayed, letter progress is visual and clear
+**Social Links**
+- Functionality: Provide access to GitHub, X (Twitter), and Discord communities
+- Purpose: Allow interested users to follow and stay updated on launch
+- Trigger: Always visible in header
+- Progression: User clicks icon → Opens social platform in new tab
+- Success criteria: Links are discoverable but don't distract from main mystery box
 
-**Cooldown Timer**
-- Functionality: Prevent box opening until 7-day cooldown expires, show remaining time
-- Purpose: Control engagement frequency and create scarcity
-- Trigger: User attempts to open box before cooldown expires
-- Progression: User clicks box → System checks last interaction time → Modal shows remaining cooldown time in friendly format → User understands when they can return
-- Success criteria: Time remaining is accurate and displayed in human-readable format (days, hours, minutes)
-
-**Prize Reveal System**
-- Functionality: Animate prize reveal with different treatments for different prize types (tokens, minerals, NFTs, letters, grand prize)
-- Purpose: Create memorable moments and differentiate prize values
-- Trigger: Box opening completes after selection
-- Progression: Box opens with 3D animation → Brief suspense pause → Prize type determines animation style → Confetti/particles for valuable prizes → Modal with prize details and next steps
-- Success criteria: Each prize type has distinct, satisfying reveal animation
-
-**Role Unlock Progression**
-- Functionality: Track letter collection to unlock RENDRILL, PROMDRILL roles and reveal CHRONICLES for grand prize
-- Purpose: Create long-term engagement through progression mechanics
-- Trigger: User collects all unique letters for a word
-- Progression: Collect letter → Progress bar updates → Final letter collected → Celebratory animation → Role unlock notification → UI updates to show new tier
-- Success criteria: User clearly understands progress toward next tier and celebrates unlock moment
+**No-Scroll Layout**
+- Functionality: Entire page fits within viewport on all devices without scrolling
+- Purpose: Create focused, immersive experience
+- Trigger: Page load and window resize
+- Progression: Content auto-adjusts to fit viewport height → Maintains single-screen layout
+- Success criteria: No vertical or horizontal scroll on any device size, mobile through desktop
 
 ## Edge Case Handling
 
-- **Empty Box Selection** - Show sympathetic message with next availability time instead of generic failure
-- **Network Disconnection** - Display reconnection prompt without losing modal state, queue actions for retry
-- **Multiple Tabs Open** - Sync state across tabs using storage events, prevent double claiming
-- **Cooldown Edge Cases** - Handle cooldown that expires while user is viewing the page, enable boxes dynamically
-- **Already Unlocked Roles** - Hide letter progress for completed tiers, show only active progression
-- **Grand Prize Winner** - Special UI treatment, remove CHRONICLES letter collection from prize pool
-- **No Prizes Yet** - Show encouraging empty state in My Loot instead of blank screen
-- **Mobile Orientation Change** - Reflow layout instantly to maintain no-scroll constraint in both orientations
-- **Long Usernames** - Truncate with ellipsis in header while showing full name in My Loot modal
+- **Very Small Screens** - Box scales down proportionally while maintaining visibility and animation quality
+- **Very Large Screens** - Content centers and scales appropriately without becoming oversized
+- **Landscape Mobile** - Layout adjusts to reduced height while keeping all elements visible
+- **Slow Connections** - Animations start smoothly even before full page resources load
+- **Reduced Motion Preference** - Respects prefers-reduced-motion and shows static or minimal animation
+- **Social Link Failures** - Links open in new tab to preserve coming soon page state
 
 ## Design Direction
 
-The design should evoke mystery, luxury, and anticipation - like opening a high-end gift box in a dimly lit, exclusive gallery. Dark backgrounds with glowing accents, smooth 3D-style transformations, and premium finishes create a sophisticated gaming experience that feels valuable and exclusive.
+The design should evoke deep space mystery, premium technology, and anticipation - like witnessing a rare artifact in a private collection. Dark cosmic backgrounds with vibrant purple/magenta glows create an otherworldly, exclusive feeling that builds curiosity about the launch.
 
 ## Color Selection
 
-A deep space theme with cyan/electric blue as the signature color - distinct from the ecosystem but complementary, suggesting technology, energy, and rarity.
+A distinctive purple/magenta palette that stands apart from the ONE ecosystem while feeling connected through shared dark space aesthetic.
 
-- **Primary Color**: `oklch(0.65 0.19 235)` - Electric Cyan/Blue - Communicates digital energy, mystery, and premium quality; stands out against dark backgrounds
+- **Primary Color**: `oklch(0.58 0.20 280)` - Rich purple/violet - Communicates mystery, luxury, and digital innovation
 - **Secondary Colors**: 
-  - Background: `oklch(0.12 0.02 265)` - Deep space navy, almost black but with subtle blue undertone
-  - Surface: `oklch(0.18 0.03 260)` - Slightly lighter for cards and boxes
-- **Accent Color**: `oklch(0.75 0.22 195)` - Bright cyan for CTAs, glows, and important highlights - grabs attention for mystery box interactions
+  - Background: `oklch(0.12 0.02 265)` - Deep space navy, creates dramatic contrast
+  - Surface: `oklch(0.18 0.03 260)` - Slightly lighter for the box card surface
+- **Accent Color**: `oklch(0.70 0.25 320)` - Bright magenta for glows and highlights - creates energy and draws attention
 - **Foreground/Background Pairings**:
-  - Primary (Electric Cyan oklch(0.65 0.19 235)): White text (oklch(0.98 0 0)) - Ratio 7.2:1 ✓
+  - Primary (Rich Purple oklch(0.58 0.20 280)): White text (oklch(0.98 0 0)) - Ratio 5.8:1 ✓
   - Background (Deep Navy oklch(0.12 0.02 265)): Light text (oklch(0.92 0.02 240)) - Ratio 12.8:1 ✓
-  - Surface (Card Navy oklch(0.18 0.03 260)): Light text (oklch(0.92 0.02 240)) - Ratio 9.1:1 ✓
-  - Accent (Bright Cyan oklch(0.75 0.22 195)): Dark text (oklch(0.12 0.02 265)) - Ratio 9.8:1 ✓
+  - Accent (Bright Magenta oklch(0.70 0.25 320)): White text (oklch(0.98 0 0)) - Ratio 6.2:1 ✓
 
 ## Font Selection
 
-Typography should feel futuristic yet readable, with geometric precision that suggests technology while maintaining elegance for the premium mystery box experience.
+Clean, futuristic typography that balances readability with tech-forward personality for the "Coming Soon" message.
 
-- **Primary Font**: Space Grotesk - Modern geometric sans with tech-forward personality, excellent readability
-- **Secondary Font**: JetBrains Mono - For numerical values and tokens to create technical precision
+- **Primary Font**: Space Grotesk - Modern geometric sans with excellent readability and tech aesthetic
+- **Secondary Font**: JetBrains Mono - For any technical details (not heavily used on coming soon page)
 
 **Typographic Hierarchy**:
-- H1 (App Title/ONE box): Space Grotesk Bold/32px/tight letter spacing (-0.02em)
-- H2 (Modal Titles): Space Grotesk SemiBold/24px/normal letter spacing
-- H3 (Section Headers): Space Grotesk Medium/18px/normal letter spacing
-- Body (Instructions): Space Grotesk Regular/16px/relaxed line height (1.6)
-- Prize Values: JetBrains Mono Medium/20px/tabular numbers
-- UI Labels: Space Grotesk Medium/14px/uppercase/wide letter spacing (0.05em)
-- Timer/Countdown: JetBrains Mono Bold/16px/tabular numbers
+- H1 (ONE box logo header): Space Grotesk Bold/20px (mobile) → 24px (desktop)/tight spacing
+- Hero Title (Coming Soon): Space Grotesk Bold/48px (mobile) → 96px (desktop)/tight letter spacing
+- Subtitle: Space Grotesk Regular/16px (mobile) → 20px (desktop)/normal spacing
+- Footer: Space Grotesk Regular/12px (mobile) → 14px (desktop)
 
 ## Animations
 
-Animations should create a narrative journey - building suspense on hover, explosive celebration on wins, and smooth transitions between states that feel premium and intentional.
+Animations create a living, breathing mystery box that feels like it's waiting to be opened - continuous subtle motion that never becomes distracting.
 
 **Key Animation Moments**:
-- Box hover: Subtle float + glow intensification (300ms ease-out)
-- Box selection: 3D flip/open animation with spring physics (800ms)
-- Prize reveal: Scale + fade in with particle burst for rare items (600ms)
-- Role unlock: Confetti + badge scale pulse (1200ms)
-- Modal transitions: Slide from right with backdrop blur fade (400ms ease-in-out)
-- Letter collection: Individual letter slots fill with color + checkmark (300ms stagger)
-- Cooldown countdown: Smooth number transitions, pulse on final seconds
+- Page load hero fade: Title and box fade in with subtle scale (800ms ease-out)
+- Box float: Continuous slow vertical float with 3D rotation (4s ease-in-out infinite)
+- Glow pulse: Pulsing shadow and border glow (3s ease-in-out infinite)
+- Shimmer effect: Periodic light sweep across box surface (3s linear infinite)
+- Icon rotations: Sparkle icons rotate continuously (20s linear infinite)
+- Text glow: Pulsing text shadow on hero title (3s ease-in-out infinite)
+- Button states: Smooth opacity transitions on disabled coming soon button
 
 ## Component Selection
 
 **Components**:
-- **Dialog**: For My Loot inventory and prize reveal modals - full customization with slide-in animation
-- **Avatar**: User identity in header with online status ring
-- **Badge**: Current tier display with role-specific colors
-- **Button**: Box selection (styled as 3D box cards), My Loot button, and CTAs
-- **Card**: For prize display within modals and stats
-- **Progress**: Letter collection visualization (custom with filled/empty states)
-- **Separator**: Subtle dividers in My Loot sections
-- **Tooltip**: Hover hints for boxes and UI elements
+- **Button**: Coming Soon CTA (disabled state) - Shadcn Button component
+- **Social Icons**: Phosphor icons for GitHub, X, Discord - simple anchor links
+- **Logo Icon**: Rotating Sparkle icon for brand presence
+- **Mystery Box Icon**: Package icon from Phosphor as box centerpiece
 
 **Customizations**:
-- **3D Box Cards**: Custom component using CSS transforms and shadows to create depth, with hover tilt effect
-- **Prize Reveal Animation**: Custom framer-motion sequence with particle system using canvas or CSS
-- **Letter Progress Slots**: Custom component showing word with filled/empty letter positions
-- **Tier Badge**: Custom badge with animated border and glow for current tier
-- **Countdown Timer**: Custom component with animated digits and pulse effects
+- **3D Mystery Box Card**: Custom styled div with perspective transforms, gradients, glows, and shadows to create depth
+- **Floating Animation**: Custom CSS keyframes for box hover effect
+- **Shimmer Overlay**: Linear gradient animation that sweeps across the box
+- **Glow Effects**: Multiple layered box-shadows creating dynamic glow pulses
+- **Atmospheric Background**: Radial gradient blobs positioned absolutely with blur for space effect
 
 **States**:
-- Boxes: default (floating idle), hover (glow + lift), selected (opening animation), disabled (grayed out during cooldown)
-- Buttons: default, hover (glow + scale), active (pressed), disabled (muted)
-- Modals: closed, opening (slide in), open, closing (slide out)
-- Letter Slots: empty (hollow), filled (colored with letter), completing (animation sequence)
+- All components use static or infinite animation states
+- No user interaction states beyond social link hovers
+- Coming Soon button is permanently disabled but styled to look intentional
 
 **Icon Selection**:
-- Gift/Box: Custom 3D box illustration for main boxes
-- Crown: Grand prize winner indicator (Phosphor Crown)
-- Key: Lock/unlock for role progression (Phosphor Key)
-- Sparkles: Prize rarity indicator (Phosphor Sparkle)
-- Diamond: For Blue Minerals (Phosphor Diamond)
-- Palette: For Genesis Art NFTs (Phosphor Palette)
-- Coins: For $EXPL token (Phosphor CurrencyCircleDollar)
-- Clock: Cooldown timer (Phosphor Clock)
-- Package: My Loot button (Phosphor Package)
+- Sparkle (Phosphor): Rotating logo icon in header
+- Package (Phosphor): Central mystery box representation
+- GithubLogo, XLogo, DiscordLogo (Phosphor): Social links in header
 
 **Spacing**:
-- Container padding: 24px (mobile), 32px (desktop)
-- Box grid gap: 16px (mobile), 24px (desktop)
-- Modal content padding: 24px
-- Section spacing: 32px
-- Element spacing: 12px (related), 24px (unrelated)
+- Header/Footer padding: 12px (mobile), 16px (desktop)
+- Main content: flex-centered with auto margin
+- Hero text spacing: 12px (mobile), 16px (desktop)
+- Box glow margin: 16px offset for visual breathing room
 
 **Mobile**:
-- Single column box grid (2 boxes per row on smallest screens)
-- Collapsible header to icon-only mode
-- Full-screen modals on mobile (slide up from bottom instead of right)
-- Touch-friendly box sizing (minimum 120px × 120px)
-- Bottom sheet style for My Loot on mobile instead of side modal
-- Sticky header and footer with main content area flex-filling viewport
+- Single column centered layout
+- Box scales from 280px max-width (70vw) to maintain proportions
+- Text sizes scale down appropriately
+- Footer remains single line with year display
+- Header collapses social icons to icon-only with reduced padding
+- All content remains visible without scroll in both portrait and landscape
