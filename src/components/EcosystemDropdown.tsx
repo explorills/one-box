@@ -27,15 +27,28 @@ export function EcosystemDropdown() {
 
   return (
     <div ref={dropdownRef} className="relative">
+      {/* Desktop button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground bg-secondary/50 hover:bg-secondary border border-border rounded-lg transition-all duration-200 cursor-pointer"
+        className="hidden sm:flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground bg-secondary/50 hover:bg-secondary border border-border rounded-lg transition-all duration-200 cursor-pointer"
       >
         ONE ecosystem
         <CaretDown
           size={14}
           weight="bold"
           className={`transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+        />
+      </button>
+
+      {/* Mobile button — arrow only with primary border */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex sm:hidden items-center justify-center w-9 h-9 border border-primary/50 rounded-lg bg-secondary/50 hover:bg-secondary transition-all duration-200 cursor-pointer"
+      >
+        <CaretDown
+          size={16}
+          weight="bold"
+          className={`text-primary transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
         />
       </button>
 
