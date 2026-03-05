@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
-import { Package, Sparkle, GithubLogo, XLogo, DiscordLogo } from '@phosphor-icons/react'
+import { Package, Sparkle } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
+import { PoweredByExplNodes } from '@/components/PoweredByExplNodes'
+import logo from '@/assets/images/logo.png'
 
 function App() {
   const currentYear = new Date().getFullYear()
@@ -12,48 +14,23 @@ function App() {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-[100px]" />
       </div>
 
-      <header className="border-b border-border/30 backdrop-blur-sm bg-background/50 z-10 flex-shrink-0">
-        <div className="container mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-            >
-              <Sparkle size={24} weight="duotone" className="text-primary" />
-            </motion.div>
-            <h1 className="text-lg sm:text-xl font-bold tracking-tight">
-              <span className="text-primary">ONE</span> <span className="text-foreground">box</span>
-            </h1>
-          </div>
-          
-          <div className="flex items-center gap-2 sm:gap-3">
-            <a
-              href="https://github.com/explorills"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors p-2"
-              aria-label="GitHub"
-            >
-              <GithubLogo size={18} weight="fill" />
-            </a>
-            <a
-              href="https://x.com/explorills_main"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors p-2"
-              aria-label="X"
-            >
-              <XLogo size={18} weight="fill" />
-            </a>
-            <a
-              href="https://discord.com/invite/RetTCVq7tJ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors p-2"
-              aria-label="Discord"
-            >
-              <DiscordLogo size={18} weight="fill" />
-            </a>
+      <header className="fixed top-0 left-0 right-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+          <div className="flex items-center gap-[11px]">
+            <img
+              src={logo}
+              alt="ONE box"
+              className="w-[58px] h-[58px] sm:w-[66px] sm:h-[66px] object-contain"
+              width="66"
+              height="66"
+              loading="eager"
+            />
+            <div className="flex flex-col gap-2">
+              <p className="text-[24px] sm:text-[26px] font-bold tracking-tight leading-none">
+                ONE <span className="text-primary">box</span>
+              </p>
+              <PoweredByExplNodes size="sm" />
+            </div>
           </div>
         </div>
       </header>
