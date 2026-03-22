@@ -14,17 +14,10 @@ optional = true
 # Enable dev dependencies (except in production)
 dev = true
 
-# Security: Only install packages published at least 3 days ago
-# This protects against supply chain attacks
-minimumReleaseAge = 259200  # 3 days in seconds
+minimumReleaseAge = 0
 
-# Exclude trusted packages from the age gate
-minimumReleaseAgeExcludes = [
-  "@types/node",
-  "@types/react",
-  "@types/react-dom",
-  "typescript"
-]
+[install.scopes]
+"@explorills" = { registry = "https://npm.pkg.github.com" }
 
 [install.cache]
 # Cache directory for packages
