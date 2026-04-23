@@ -2,14 +2,13 @@ import { motion } from 'framer-motion'
 import { Package, Sparkle } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { OneIdProvider, EcosystemNavbar, EcosystemFooter } from '@explorills/one-ecosystem-ui'
-import { getOneIdApiUrl } from '@/lib/utils'
 import logo from '@/assets/images/logo.png'
 
 const REOWN_PROJECT_ID = '1fe344d4623291d85ad7369cbc6d9ec8'
 
 function App() {
   return (
-    <OneIdProvider apiUrl={getOneIdApiUrl()} projectId={REOWN_PROJECT_ID} profilePath="/profile" platformColor="oklch(0.58 0.20 280)">
+    <OneIdProvider projectId={REOWN_PROJECT_ID} profilePath="/profile" platformColor="oklch(0.58 0.20 280)">
       <div className="h-screen w-screen flex flex-col bg-background overflow-hidden relative">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[100px]" />
